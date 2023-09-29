@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Jun 18 14:39:42 2023
+# Process ID: 28792
+# Current directory: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav/xsim.dir/StateMachine_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Mohammad -notrace

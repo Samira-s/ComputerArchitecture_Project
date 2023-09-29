@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../CA_project/HA.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/FA2.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/FA.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/CAS.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/six_bit_adder.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/BlockY.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/BlockX.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/simple_multi.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/main.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/ROM_Module.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/RAM_Module.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/Program_Counter.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/ALU_Module.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/State_Machine.vhd"
+vhdl xil_defaultlib  "../../../../CA_project/CPU_Test.vhd"
+vhdl xil_defaultlib  "../../../final_project.srcs/sim_1/new/StateMachine_test.vhd"
+vhdl xil_defaultlib  "../../../final_project.srcs/sim_1/new/ALU_TEST.vhd"
+
+# Do not sort compile order
+nosort

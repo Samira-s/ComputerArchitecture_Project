@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Jun 17 20:07:27 2023
+# Process ID: 35048
+# Current directory: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/synth/func
+# Command line: wbtcv.exe -mode batch -source C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/synth/func/xsim.dir/CPU_Test_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/synth/func/webtalk.log
+# Journal file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/synth/func\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Mohammad -notrace
+couldn't read file "C:/Users/Mohammad": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sat Jun 17 20:07:27 2023...

@@ -1,0 +1,12 @@
+-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+-- Date        : Sat Jun 17 20:07:21 2023
+-- Host        : DESKTOP-0P0L152 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -mode funcsim -nolib -force -file {C:/Users/Mohammad masih/Desktop/memari
+--               project/final_project/final_project.sim/sim_1/synth/func/CPU_Test_func_synth.vhd}
+-- Design      : State_Machine
+-- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
+--               synthesized. This netlist cannot be used for SDF annotated simulation.
+-- Device      : xc7vx485tffg1157-1
+-- --------------------------------------------------------------------------------

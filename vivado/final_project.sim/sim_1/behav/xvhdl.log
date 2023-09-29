@@ -1,0 +1,34 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CAS
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity six_bit_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockY
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity simple_multi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity main
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ROM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/RAM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Program_Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CPU_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CPU_Test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/StateMachine_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity StateMachine_test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/ALU_TEST.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_TEST

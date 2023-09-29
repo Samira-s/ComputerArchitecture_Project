@@ -1,0 +1,15 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto b48bff800b6643cebdca694b7ccc533b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot CPU_Test_func_synth xil_defaultlib.CPU_Test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-122] state_machine remains a black-box since it has no binding entity [C:/Users/Mohammad masih/Desktop/memari project/CA_project/CPU_Test.vhd:60]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavior of entity xil_defaultlib.cpu_test
+Built simulation snapshot CPU_Test_func_synth

@@ -1,0 +1,366 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Jun 18 09:29:40 2023
+# Process ID: 21340
+# Current directory: C:/Users/Mohammad masih/Desktop/memari project/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30896 C:\Users\Mohammad masih\Desktop\memari project\final_project\final_project.xpr
+# Log file: C:/Users/Mohammad masih/Desktop/memari project/final_project/vivado.log
+# Journal file: C:/Users/Mohammad masih/Desktop/memari project/final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 858.605 ; gain = 179.898
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Jun 18 10:24:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7vx485tffg1157-1
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1359.148 ; gain = 453.266
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'StateMachine_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj StateMachine_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CAS
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity six_bit_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockY
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity simple_multi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity main
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ROM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/RAM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Program_Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CPU_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CPU_Test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/StateMachine_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity StateMachine_test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/ALU_TEST.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_TEST
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto b48bff800b6643cebdca694b7ccc533b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot StateMachine_test_behav xil_defaultlib.StateMachine_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM_Module [rom_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_Module [ram_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.six_bit_adder [six_bit_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.simple_multi [simple_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA2 [fa2_default]
+Compiling architecture behavioral of entity xil_defaultlib.CAS [cas_default]
+Compiling architecture behavioral of entity xil_defaultlib.BlockX [blockx_default]
+Compiling architecture behavioral of entity xil_defaultlib.BlockY [blocky_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_Module [alu_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.statemachine_test
+Built simulation snapshot StateMachine_test_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Mohammad -notrace
+couldn't read file "C:/Users/Mohammad": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 18 10:52:13 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "StateMachine_test_behav -key {Behavioral:sim_1:Functional:StateMachine_test} -tclbatch {StateMachine_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source StateMachine_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'StateMachine_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1848.012 ; gain = 11.906
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'StateMachine_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj StateMachine_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CAS
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity six_bit_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockY
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity simple_multi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity main
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ROM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/RAM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Program_Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CPU_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CPU_Test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/StateMachine_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity StateMachine_test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/ALU_TEST.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_TEST
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto b48bff800b6643cebdca694b7ccc533b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot StateMachine_test_behav xil_defaultlib.StateMachine_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM_Module [rom_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_Module [ram_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.six_bit_adder [six_bit_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.simple_multi [simple_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA2 [fa2_default]
+Compiling architecture behavioral of entity xil_defaultlib.CAS [cas_default]
+Compiling architecture behavioral of entity xil_defaultlib.BlockX [blockx_default]
+Compiling architecture behavioral of entity xil_defaultlib.BlockY [blocky_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_Module [alu_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.statemachine_test
+Built simulation snapshot StateMachine_test_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Mohammad -notrace
+couldn't read file "C:/Users/Mohammad": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 18 12:15:07 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "StateMachine_test_behav -key {Behavioral:sim_1:Functional:StateMachine_test} -tclbatch {StateMachine_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source StateMachine_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'StateMachine_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1876.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'StateMachine_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj StateMachine_test_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CAS
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity six_bit_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockY
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BlockX
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity simple_multi
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity main
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ROM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ROM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/RAM_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAM_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Program_Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_Module
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity State_Machine
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/CA_project/CPU_Test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CPU_Test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/StateMachine_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity StateMachine_test
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.srcs/sim_1/new/ALU_TEST.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_TEST
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto b48bff800b6643cebdca694b7ccc533b --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot StateMachine_test_behav xil_defaultlib.StateMachine_test -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Program_Counter [program_counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM_Module [rom_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM_Module [ram_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.six_bit_adder [six_bit_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.simple_multi [simple_multi_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA2 [fa2_default]
+Compiling architecture behavioral of entity xil_defaultlib.CAS [cas_default]
+Compiling architecture behavioral of entity xil_defaultlib.BlockX [blockx_default]
+Compiling architecture behavioral of entity xil_defaultlib.BlockY [blocky_default]
+Compiling architecture behavioral of entity xil_defaultlib.main [main_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_Module [alu_module_default]
+Compiling architecture behavioral of entity xil_defaultlib.statemachine_test
+Built simulation snapshot StateMachine_test_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Mohammad -notrace
+couldn't read file "C:/Users/Mohammad": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 18 12:16:09 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "StateMachine_test_behav -key {Behavioral:sim_1:Functional:StateMachine_test} -tclbatch {StateMachine_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source StateMachine_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'StateMachine_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1876.945 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1876.945 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 18 14:39:44 2023...

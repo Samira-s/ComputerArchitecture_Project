@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Jun 18 10:24:46 2023
+# Process ID: 1868
+# Current directory: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1
+# Command line: vivado.exe -log State_Machine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source State_Machine.tcl
+# Log file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1/State_Machine.vds
+# Journal file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source State_Machine.tcl -notrace

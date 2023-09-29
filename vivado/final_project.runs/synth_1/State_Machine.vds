@@ -1,0 +1,553 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sun Jun 18 10:24:46 2023
+# Process ID: 1868
+# Current directory: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1
+# Command line: vivado.exe -log State_Machine.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source State_Machine.tcl
+# Log file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1/State_Machine.vds
+# Journal file: C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source State_Machine.tcl -notrace
+Command: synth_design -top State_Machine -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21136 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 330.660 ; gain = 121.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'State_Machine' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:13]
+	Parameter PC_width bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'Program_Counter' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd:7' bound to instance 'PC_Module' of component 'Program_Counter' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'Program_Counter' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd:20]
+	Parameter PC_width bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Program_Counter' (1#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/Program_Counter.vhd:20]
+	Parameter addr_width bound to: 1024 - type: integer 
+	Parameter addr_bits bound to: 10 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ROM_Module' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/ROM_Module.vhd:6' bound to instance 'ROM' of component 'ROM_Module' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'ROM_Module' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ROM_Module.vhd:17]
+	Parameter addr_width bound to: 1024 - type: integer 
+	Parameter addr_bits bound to: 10 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ROM_Module' (2#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ROM_Module.vhd:17]
+	Parameter addr_width bound to: 10 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'RAM_Module' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/RAM_Module.vhd:8' bound to instance 'RAM' of component 'RAM_Module' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'RAM_Module' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/RAM_Module.vhd:24]
+	Parameter addr_width bound to: 10 - type: integer 
+	Parameter data_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM_Module' (3#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/RAM_Module.vhd:24]
+INFO: [Synth 8-3491] module 'ALU_Module' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:8' bound to instance 'ALU' of component 'ALU_Module' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'ALU_Module' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:20]
+INFO: [Synth 8-3491] module 'simple_multi' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:32' bound to instance 'Multiplier_Module' of component 'simple_multi' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'simple_multi' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:38]
+INFO: [Synth 8-3491] module 'six_bit_adder' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:32' bound to instance 'cell_1' of component 'six_bit_adder' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'six_bit_adder' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:40]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:32' bound to instance 'FA1' of component 'FA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'FA' (4#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:40]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:32' bound to instance 'FA2' of component 'FA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:58]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:32' bound to instance 'FA3' of component 'FA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:59]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:32' bound to instance 'FA4' of component 'FA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:60]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:32' bound to instance 'FA5' of component 'FA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:61]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA.vhd:32' bound to instance 'FA6' of component 'FA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'six_bit_adder' (5#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:40]
+INFO: [Synth 8-3491] module 'six_bit_adder' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:32' bound to instance 'cell_2' of component 'six_bit_adder' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:78]
+INFO: [Synth 8-3491] module 'six_bit_adder' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:32' bound to instance 'cell_3' of component 'six_bit_adder' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:90]
+INFO: [Synth 8-3491] module 'six_bit_adder' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:32' bound to instance 'cell_4' of component 'six_bit_adder' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:103]
+INFO: [Synth 8-3491] module 'six_bit_adder' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/six_bit_adder.vhd:32' bound to instance 'cell_5' of component 'six_bit_adder' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'simple_multi' (6#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/simple_multi.vhd:38]
+INFO: [Synth 8-3491] module 'main' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:4' bound to instance 'Square_root_Module' of component 'main' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:9]
+INFO: [Synth 8-3491] module 'BlockX' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:4' bound to instance 'X1' of component 'BlockX' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'BlockX' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:11]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS1' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:10]
+INFO: [Synth 8-3491] module 'FA2' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd:5' bound to instance 'full_adder' of component 'FA2' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'FA2' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd:10]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd:32' bound to instance 'half_adder1' of component 'HA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'HA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'HA' (7#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd:39]
+INFO: [Synth 8-3491] module 'HA' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/HA.vhd:32' bound to instance 'half_adder2' of component 'HA' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'FA2' (8#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/FA2.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'CAS' (9#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:10]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS2' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:27]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS3' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:28]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS4' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:29]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS5' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:30]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS6' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:31]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS7' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'BlockX' (10#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:11]
+INFO: [Synth 8-3491] module 'BlockY' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:5' bound to instance 'Y1' of component 'BlockY' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'BlockY' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:10]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS1' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:27]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS2' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:28]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS3' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:29]
+INFO: [Synth 8-3491] module 'CAS' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/CAS.vhd:4' bound to instance 'CAS4' of component 'CAS' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'BlockY' (11#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:10]
+INFO: [Synth 8-3491] module 'BlockX' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:4' bound to instance 'X2' of component 'BlockX' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:68]
+INFO: [Synth 8-3491] module 'BlockY' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:5' bound to instance 'Y2' of component 'BlockY' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:74]
+INFO: [Synth 8-3491] module 'BlockY' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:5' bound to instance 'Y3' of component 'BlockY' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:79]
+INFO: [Synth 8-3491] module 'BlockX' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:4' bound to instance 'X3' of component 'BlockX' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:84]
+INFO: [Synth 8-3491] module 'BlockY' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:5' bound to instance 'Y4' of component 'BlockY' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:90]
+INFO: [Synth 8-3491] module 'BlockY' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:5' bound to instance 'Y5' of component 'BlockY' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:94]
+INFO: [Synth 8-3491] module 'BlockY' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockY.vhd:5' bound to instance 'Y6' of component 'BlockY' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:98]
+INFO: [Synth 8-3491] module 'BlockX' declared at 'C:/Users/Mohammad masih/Desktop/memari project/CA_project/BlockX.vhd:4' bound to instance 'X4' of component 'BlockX' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'main' (12#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/main.vhd:9]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'ALU_Module' (13#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:20]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+WARNING: [Synth 8-614] signal 'IR' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+WARNING: [Synth 8-614] signal 'Opcode' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+WARNING: [Synth 8-614] signal 'DR' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+WARNING: [Synth 8-614] signal 'AC' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+WARNING: [Synth 8-614] signal 'E' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+WARNING: [Synth 8-614] signal 'AC_signal' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+WARNING: [Synth 8-614] signal 'E_signal' is read in the process but is not in the sensitivity list [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'State_Machine' (14#1) [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:13]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[9]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[8]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[7]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[6]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[5]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[4]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[3]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[2]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[1]
+WARNING: [Synth 8-3331] design Program_Counter has unconnected port PC_in[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 365.988 ; gain = 156.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 365.988 ; gain = 156.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 365.988 ; gain = 156.445
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:60]
+INFO: [Synth 8-5587] ROM size for "ALU_Result" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "AC_OUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "E_OUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'State_Machine'
+INFO: [Synth 8-5546] ROM "nxt_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Operand" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "WriteEnable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RAM_Input" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "AC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "E" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RAM_Address" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Opcode" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nxt_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'AC_OUT_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 'E_OUT_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_Result_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/ALU_Module.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'nxt_state_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:156]
+WARNING: [Synth 8-327] inferring latch for variable 'nxt_state_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:156]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   fetch |                           000001 |                              000
+                  decode |                           000010 |                              001
+                read_ram |                           000100 |                              010
+                 execute |                           001000 |                              011
+               ac_update |                           010000 |                              100
+                  iSTATE |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'State_Machine'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nxt_state_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:156]
+WARNING: [Synth 8-327] inferring latch for variable 'Opcode_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:140]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_Address_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:132]
+WARNING: [Synth 8-327] inferring latch for variable 'Operand_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:139]
+WARNING: [Synth 8-327] inferring latch for variable 'Enable_ALU_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:142]
+WARNING: [Synth 8-327] inferring latch for variable 'WriteEnable_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:131]
+WARNING: [Synth 8-327] inferring latch for variable 'RAM_Input_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:133]
+WARNING: [Synth 8-327] inferring latch for variable 'AC_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:192]
+WARNING: [Synth 8-327] inferring latch for variable 'E_reg' [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:219]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 449.086 ; gain = 239.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
++---XORs : 
+	   3 Input      1 Bit         XORs := 30    
+	   2 Input      1 Bit         XORs := 156   
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	  12 Input     17 Bit        Muxes := 1     
+	  13 Input     17 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	  15 Input      6 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module State_Machine 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+	  15 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 2     
+Module Program_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module FA 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+Module HA 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module CAS 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module ALU_Module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	  12 Input     17 Bit        Muxes := 1     
+	  13 Input     17 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+-------------------+---------------+----------------+
+|Module Name   | RTL Object        | Depth x Width | Implemented As | 
++--------------+-------------------+---------------+----------------+
+|ROM_Module    | ROM_Memory[0]     | 1024x13       | LUT            | 
+|State_Machine | ROM/ROM_Memory[0] | 1024x13       | LUT            | 
++--------------+-------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+------------------+-----------+----------------------+------------------+
+|Module Name   | RTL Object       | Inference | Size (Depth x Width) | Primitives       | 
++--------------+------------------+-----------+----------------------+------------------+
+|State_Machine | RAM/RAM_Data_reg | Implied   | 1 K x 16             | RAM256X1S x 64   | 
++--------------+------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[15]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[14]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[13]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[12]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[11]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[10]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[9]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[8]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[7]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[6]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[5]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[4]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[3]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[2]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[1]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/AC_OUT_reg[0]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/E_OUT_reg) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[16]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[15]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[14]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[13]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[12]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[11]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[10]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[9]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[8]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[7]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[6]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[5]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[4]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[3]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[2]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[1]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (ALU/ALU_Result_reg[0]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Opcode_reg[5]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Opcode_reg[4]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Opcode_reg[3]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[9]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[8]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[7]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[6]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[5]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[4]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[3]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[2]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[1]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Address_reg[0]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[15]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[14]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[13]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[12]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[11]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[10]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[9]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[8]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[7]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[6]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[5]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[4]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[3]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[2]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[1]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Operand_reg[0]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (Enable_ALU_reg) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (WriteEnable_reg) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[15]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[14]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[13]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[12]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[11]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[10]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[9]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[8]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[7]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[6]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[5]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[4]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[3]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[2]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[1]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (RAM_Input_reg[0]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[15]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[14]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[13]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[12]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[11]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[10]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[9]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[8]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[7]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[6]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[5]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[4]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[3]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[2]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[1]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (AC_reg[0]) is unused and will be removed from module State_Machine.
+WARNING: [Synth 8-3332] Sequential element (E_reg) is unused and will be removed from module State_Machine.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin G has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/Mohammad masih/Desktop/memari project/CA_project/State_Machine.vhd:140]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     1|
+|4     |LUT4 |     4|
+|5     |LUT5 |    10|
+|6     |LUT6 |    11|
+|7     |FDCE |     5|
+|8     |FDPE |     1|
+|9     |FDRE |    20|
+|10    |LD   |     9|
+|11    |IBUF |     2|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------+----------------+------+
+|      |Instance    |Module          |Cells |
++------+------------+----------------+------+
+|1     |top         |                |    65|
+|2     |  PC_Module |Program_Counter |    36|
+|3     |  ROM       |ROM_Module      |     4|
++------+------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 132 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 674.023 ; gain = 399.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 674.023 ; gain = 464.480
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+108 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 733.391 ; gain = 494.672
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mohammad masih/Desktop/memari project/final_project/final_project.runs/synth_1/State_Machine.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 733.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 18 10:25:30 2023...
